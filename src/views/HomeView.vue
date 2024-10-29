@@ -335,11 +335,36 @@
         </div>
     </section>
 
-    <section class="form__service__home"></section>
+    <section class="form__service__home bg-white pt-20 pb-24">
+        <div class="title-section w-full px-24 py-12 text-black">
+            <div class="name__section font-Hubballi uppercase">
+                <span class="text-[1.2rem]">Reserve já!</span>
+            </div>
+
+            <div class="sub__service__section font-YoungSerif uppercase ">
+                <h1 class="text-[1.5rem]">reserve seu atendimento abaixo.</h1>
+            </div>
+        </div>
+
+        <div class="form__section__service px-24">
+            <FormService />
+        </div>
+
+        <div class="watermark__section m-auto pt-20 w-2/6">
+            <img src="/src/assets/watermark-viking.png" alt="">
+        </div>
+    </section>
 </template>
 
-<script setup>
-// Adicione aqui qualquer lógica de script, se necessário
+<script>
+import FormService from "../components/FormService.vue";
+
+export default {
+  name: "Home",
+  components: {
+    FormService
+  }
+};
 </script>
 
 <style>
