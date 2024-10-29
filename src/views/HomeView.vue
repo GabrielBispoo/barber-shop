@@ -21,7 +21,7 @@
 
     </section>
 
-    <section class="client__home">
+    <section class="client__home pt-24 pb-36">
         <div class="content__clients">
             <div class="title-section w-full px-24 py-12 text-white">
                 <div class="name__section font-Hubballi uppercase">
@@ -71,7 +71,7 @@
         </div>
     </section>
 
-    <section class="service__home">
+    <section class="service__home pt-24 pb-36">
         <div class="content__services">
             <div class="title-section w-full px-24 py-12 text-white">
                 <div class="name__section font-Hubballi uppercase">
@@ -85,8 +85,9 @@
 
 
             <div class="content__flexbox grid__services flex flex-wrap overflow-hidden px-24 gap-8">
-                <div class="service-01__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
-                    <div class="icon__services">
+                <div
+                    class="service-01__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
+                    <div class="icon__services my-2">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_51_91)">
                                 <path
@@ -112,8 +113,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="service-02__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
-                    <div class="icon__services">
+                <div
+                    class="service-02__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
+                    <div class="icon__services my-2">
                         <svg width="50" height="44" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M41.9748 13.0642L41.9748 13.0643L47.3132 20.5788L47.3133 20.5789C47.5569 20.922 47.6717 21.3398 47.6369 21.759C47.6021 22.1783 47.4201 22.5715 47.1235 22.87L47.1233 22.8702C46.6723 23.3238 45.7167 23.6931 44.8285 23.0867L44.8285 23.0866L36.8095 17.6092C36.0453 17.0875 35.1782 16.7329 34.2654 16.5692C33.3526 16.4055 32.4151 16.4364 31.5153 16.6597L9.19347 22.2041C9.19346 22.2041 9.19345 22.2041 9.19343 22.2041C7.54027 22.6148 5.81856 22.2519 4.47491 21.2096L41.9748 13.0642ZM41.9748 13.0642C39.7594 9.94626 36.1452 8.08636 32.3058 8.08636C30.1095 8.08636 27.9036 8.29754 25.7481 8.71419C25.7481 8.71419 25.748 8.7142 25.748 8.7142L5.97477 12.5339L5.97475 12.5339M41.9748 13.0642L5.97475 12.5339M5.97475 12.5339C3.88027 12.9385 2.35742 14.7712 2.35742 16.8973M5.97475 12.5339L2.35742 16.8973M29.4383 33.33L29.4387 33.3297C30.2135 32.7151 31.3429 32.8396 31.9625 33.611C32.5839 34.3841 32.4557 35.5111 31.6794 36.1274M29.4383 33.33L8.59286 36.1272L8.90406 35.7358L8.59319 36.1274C8.62433 36.1522 8.66384 36.1845 8.71159 36.2236C9.6478 36.989 13.7534 40.346 20.1363 40.346C26.5182 40.346 30.6228 36.9905 31.5606 36.2238C31.6085 36.1847 31.6481 36.1523 31.6794 36.1274M29.4383 33.33C29.4091 33.3532 29.372 33.3837 29.3269 33.4207C28.529 34.0757 25.2493 36.7681 20.1363 36.7681C15.0243 36.7681 11.7451 34.0768 10.946 33.4209C10.9007 33.3838 10.8634 33.3531 10.8341 33.3299L10.8338 33.3296M29.4383 33.33L10.8338 33.3296M31.6794 36.1274L31.3685 35.7358L31.6797 36.1272C31.6796 36.1273 31.6795 36.1274 31.6794 36.1274ZM10.8338 33.3296C10.0593 32.7152 8.92996 32.8396 8.31018 33.6109L10.8338 33.3296ZM2.35742 16.8973C2.35742 18.5939 3.13086 20.1675 4.47478 21.2095L2.35742 16.8973Z"
@@ -132,8 +134,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="service-03__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
-                    <div class="icon__services">
+                <div
+                    class="service-03__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
+                    <div class="icon__services my-2">
                         <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_52_122)">
                                 <path
@@ -164,8 +167,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="service-04__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
-                    <div class="icon__services">
+                <div
+                    class="service-04__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
+                    <div class="icon__services my-2">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M21.4227 36.4942C21.2664 36.3379 21.0545 36.2502 20.8335 36.2502C20.6125 36.2502 20.4006 36.3379 20.2443 36.4942C20.166 36.5733 12.2593 44.2908 2.10351 38.04C1.91623 37.9381 1.69701 37.9118 1.49096 37.9667C1.28492 38.0215 1.10772 38.1532 0.995831 38.3347C0.883943 38.5162 0.845879 38.7337 0.889472 38.9424C0.933064 39.1511 1.055 39.3351 1.23018 39.4567C3.89235 41.1759 6.98555 42.1091 10.1543 42.1492C14.3264 42.0566 18.326 40.4665 21.4227 37.6692C21.5779 37.513 21.665 37.3018 21.665 37.0817C21.665 36.8615 21.5779 36.6503 21.4227 36.4942ZM17.961 45.3708C17.866 45.4183 8.42684 50.0308 2.25601 43.8608C2.09884 43.709 1.88834 43.625 1.66984 43.6269C1.45134 43.6288 1.24233 43.7165 1.08783 43.871C0.933321 44.0255 0.84568 44.2345 0.843782 44.453C0.841883 44.6715 0.925878 44.882 1.07768 45.0392C2.30084 46.2504 3.75662 47.2015 5.35725 47.8349C6.95788 48.4684 8.67021 48.7712 10.391 48.725C13.2612 48.6812 16.0916 48.047 18.706 46.8617C18.8048 46.8133 18.893 46.7458 18.9655 46.6632C19.0381 46.5805 19.0936 46.4843 19.1288 46.3801C19.164 46.2759 19.1782 46.1658 19.1707 46.0561C19.1631 45.9464 19.1339 45.8392 19.0848 45.7408C19.0356 45.6425 18.9674 45.5548 18.8842 45.4829C18.801 45.4109 18.7044 45.3562 18.5999 45.3218C18.4955 45.2874 18.3852 45.274 18.2756 45.2825C18.1659 45.2909 18.059 45.3209 17.961 45.3708ZM48.7702 39.46C48.9454 39.3385 49.0673 39.1544 49.1109 38.9457C49.1545 38.737 49.1164 38.5195 49.0045 38.338C48.8926 38.1565 48.7154 38.0248 48.5094 37.97C48.3033 37.9152 48.0841 37.9414 47.8968 38.0433C45.1421 39.8708 41.8502 40.7125 38.5565 40.4317C35.2627 40.1509 32.1608 38.764 29.7552 36.4967C29.5979 36.345 29.3873 36.2611 29.1688 36.2632C28.9503 36.2652 28.7414 36.353 28.587 36.5076C28.4326 36.6623 28.3451 36.8713 28.3434 37.0898C28.3416 37.3083 28.4258 37.5188 28.5777 37.6758C31.6742 40.4735 35.6739 42.0637 39.846 42.1558C43.0151 42.1148 46.1084 41.1804 48.7702 39.46ZM31.2943 46.8617C33.9087 48.0471 36.7391 48.6814 39.6093 48.725C41.3301 48.7712 43.0425 48.4684 44.6431 47.8349C46.2437 47.2015 47.6995 46.2504 48.9227 45.0392C49.0745 44.882 49.1585 44.6715 49.1566 44.453C49.1547 44.2345 49.067 44.0255 48.9125 43.871C48.758 43.7165 48.549 43.6288 48.3305 43.6269C48.112 43.625 47.9015 43.709 47.7443 43.8608C41.5893 50.015 32.1343 45.4167 32.0385 45.3708C31.8415 45.278 31.616 45.2659 31.4103 45.3373C31.2045 45.4086 31.0349 45.5576 30.9376 45.7525C30.8404 45.9473 30.8232 46.1725 30.8899 46.3798C30.9566 46.5871 31.1017 46.7601 31.2943 46.8617Z"
@@ -187,8 +191,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="service-05__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
-                    <div class="icon__services">
+                <div
+                    class="service-05__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
+                    <div class="icon__services my-2">
                         <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_52_153)">
                                 <path
@@ -220,6 +225,117 @@
             </div>
         </div>
     </section>
+
+    <section class="team__home bg-white pt-36 pb-20">
+        <div class="title-section tema__cop font-YoungSerif uppercase text-center my-8">
+            <h1>Nossos profissionais</h1>
+        </div>
+
+        <div class="cards__team flex flex-wrap overflow-hidden mx-10">
+            <div
+                class="barber__wil w-1/3 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
+                <div class="barber__image">
+                    <img src="/src/assets/willian-barber.png" alt="willian-barber">
+                </div>
+
+                <div class="content__barber">
+                    <div class="position-barber-shop font-Hubballi uppercase">
+                        <span>Barbeiro</span>
+                    </div>
+
+                    <div class="name-barber font-YoungSerif uppercase">
+                        <h1>willian</h1>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="barber__doug w-1/3 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
+                <div class="barber__image">
+                    <img src="/src/assets/douglas-barber.png" alt="douglas-barber">
+                </div>
+
+                <div class="content__barber">
+                    <div class="position-barber-shop font-Hubballi uppercase">
+                        <span>Barbeiro</span>
+                    </div>
+
+                    <div class="name-barber font-YoungSerif uppercase">
+                        <h1>douglas</h1>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="barber__edu w-1/3 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
+                <div class="barber__image">
+                    <img src="/src/assets/eduardo-barber.png" alt="eduardo-barber">
+                </div>
+
+                <div class="content__barber">
+                    <div class="position-barber-shop font-Hubballi uppercase">
+                        <span>Barbeiro</span>
+                    </div>
+
+                    <div class="name-barber font-YoungSerif uppercase">
+                        <h1>eduardo</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="watermark__section m-auto pt-20 w-2/6">
+            <img src="/src/assets/watermark-viking.png" alt="">
+        </div>
+    </section>
+
+    <section class="barber-shop__home bg-white w-full pt-20 pb-24">
+        <div class="flex items-center px-10 about-content h-dvh">
+            <div class="images__left__barber w-3/12">
+                <div class="child__image-barber z-20 relative w-5/6">
+                    <img src="/src/assets/child-about-barber.png" alt="child-haircut">
+                </div>
+                <div class="hair__image__barber relative z-10 ml-auto w-3/5">
+                    <img class="absolute right-0 -top-8" src="/src/assets/hair-about-barber.png" alt="men-haircut">
+                </div>
+            </div>
+
+            <div class="content__about-us w-1/2 px-10">
+                <div class="title-about font-YoungSerif w-80 my-8 uppercase">
+                    <h1 class="text-[2rem]">Nossa marca, Nossa História</h1>
+                </div>
+
+                <div class="content__text__about-us font-HindVadodara text-justify">
+                    <p>Bem-vindo à Viking Barbearia, um lugar onde tradição e inovação se encontram para proporcionar o
+                        melhor em cuidados masculinos. Fundada em Arapiraca, nossa barbearia nasceu do desejo de criar
+                        um
+                        espaço que une elegância e sofisticação com um toque moderno, oferecendo serviços que vão além
+                        do
+                        corte de cabelo e barba. Nossa equipe é composta por profissionais experientes que trazem na
+                        bagagem
+                        a paixão pela arte da barbearia, sempre em busca de aperfeiçoamento para garantir um atendimento
+                        de
+                        excelência. Desde a inauguração, a Viking Barbearia se consolidou como referência em estilo e
+                        bem-estar, com um ambiente pensado para oferecer uma experiência única, onde cada detalhe
+                        reflete
+                        nossa dedicação em proporcionar conforto e exclusividade. Venha nos visitar e faça parte dessa
+                        história de sucesso.</p>
+                </div>
+            </div>
+
+            <div class="images__right__barber w-3/12">
+                <div class="men__image-barber w-full">
+                    <img src="/src/assets/men-about-barber.png" alt="men-barber">
+                </div>
+            </div>
+        </div>
+
+        <div class="slider__testimonials-barber-shop pt-20">
+            <div class="title-testimonial font-YoungSerif my-8 uppercase text-center">
+                <h1 class="text-[1.5rem]">Feedbacks de clientes</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="form__service__home"></section>
 </template>
 
 <script setup>
@@ -229,5 +345,9 @@
 <style>
 .bck-img__home {
     background: url('/src/assets/banner-home-cut.png');
+}
+
+.about-content {
+    background: url('/src/assets/vinking-background-cover.png');
 }
 </style>
