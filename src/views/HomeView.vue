@@ -1,5 +1,5 @@
 <template>
-    <section class="backgound__center bck-img__home w-full h-[100dvh] relative">
+    <section class="backgound__center bck-img__home w-full h-[130dvh] relative">
 
         <div
             class="content__home banner__content  gap-4 flex flex-col absolute w-1/3 text-center bottom-0 left-2/4 translate-x-[-50%] translate-y-[-50%] text-white">
@@ -12,8 +12,8 @@
                     sempre pronto para qualquer ocasião!</p>
             </div>
 
-            <div class="btn__submit font-Hubballi uppercase">
-                <button>
+            <div class="btn__submit font-Hubballi uppercase mt-4">
+                <button class="btn-home__pay">
                     AGENDAR HORÁRIO AGORA
                 </button>
             </div>
@@ -25,11 +25,11 @@
         <div class="content__clients">
             <div class="title-section w-full px-24 py-12 text-white">
                 <div class="name__section font-Hubballi uppercase">
-                    <span>Quem é cliente do</span>
+                    <span class="text-lg">Quem é cliente do</span>
                 </div>
 
                 <div class="sub__client__section font-YoungSerif uppercase">
-                    <h1>barber shop valhalla</h1>
+                    <h1 class="text-[1.5rem]">barber shop valhalla</h1>
                 </div>
             </div>
 
@@ -75,11 +75,11 @@
         <div class="content__services">
             <div class="title-section w-full px-24 py-12 text-white">
                 <div class="name__section font-Hubballi uppercase">
-                    <span>Nossos Serviços</span>
+                    <span class="text-lg">Nossos Serviços</span>
                 </div>
 
                 <div class="sub__service__section font-YoungSerif uppercase">
-                    <h1>OS MAIS VARIADOS SERVIÇOS PARA VOCÊ DESFRUTAR DA MELHOR EXPERÊNCIA.</h1>
+                    <h1 class="text-[1.5rem]">OS MAIS VARIADOS SERVIÇOS PARA VOCÊ DESFRUTAR DA MELHOR EXPERÊNCIA.</h1>
                 </div>
             </div>
 
@@ -228,7 +228,7 @@
 
     <section class="team__home bg-white pt-36 pb-20">
         <div class="title-section tema__cop font-YoungSerif uppercase text-center my-8">
-            <h1>Nossos profissionais</h1>
+            <h1 class="text-[1.5rem]">Nossos profissionais</h1>
         </div>
 
         <div class="cards__team flex flex-wrap overflow-hidden mx-10">
@@ -240,11 +240,11 @@
 
                 <div class="content__barber">
                     <div class="position-barber-shop font-Hubballi uppercase">
-                        <span>Barbeiro</span>
+                        <span class="text-lg">Barbeiro</span>
                     </div>
 
                     <div class="name-barber font-YoungSerif uppercase">
-                        <h1>willian</h1>
+                        <h1 class="text-[1.5rem]">willian</h1>
                     </div>
                 </div>
             </div>
@@ -256,11 +256,11 @@
 
                 <div class="content__barber">
                     <div class="position-barber-shop font-Hubballi uppercase">
-                        <span>Barbeiro</span>
+                        <span class="text-lg">Barbeiro</span>
                     </div>
 
                     <div class="name-barber font-YoungSerif uppercase">
-                        <h1>douglas</h1>
+                        <h1 class="text-[1.5rem]">douglas</h1>
                     </div>
                 </div>
             </div>
@@ -272,11 +272,11 @@
 
                 <div class="content__barber">
                     <div class="position-barber-shop font-Hubballi uppercase">
-                        <span>Barbeiro</span>
+                        <span class="text-lg">Barbeiro</span>
                     </div>
 
                     <div class="name-barber font-YoungSerif uppercase">
-                        <h1>eduardo</h1>
+                        <h1 class="text-[1.5rem]">eduardo</h1>
                     </div>
                 </div>
             </div>
@@ -354,25 +354,168 @@
             <img src="/src/assets/watermark-viking.png" alt="">
         </div>
     </section>
+
+    <section class="store__barber__home bg-white">
+        <div class="store__barber-shop pt-20">
+            <div class="title-shop font-YoungSerif my-8 uppercase text-center">
+                <h1 class="text-[1.5rem]">NOSSOS PRODUTOS</h1>
+            </div>
+        </div>
+
+        <div class="product-shop flex flex-wrap overflow-hidden px-10">
+            <div
+                class="card__shop w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1 border-[1px] border-grey-800 cursor-pointer hover:opacity-80 transition duration-500">
+                <div class="info___card px-2 py-4">
+                    <div class="image__product bg-gray-500 h-[460px]">
+
+                    </div>
+
+                    <div class="content__card-product mt-4 flex flex-col gap-4 font-Hubballi uppercase">
+                        <div class="info__shop">
+                            <h1>Kit Fator de Crescimento para Barba e Peeling Don Alcides</h1>
+                        </div>
+
+                        <div class="price__card text-[1.5rem] font-bold">
+                            <span>R$ 125,99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white pt-20 pb-24">
+        <div class="tips__barber my-20">
+            <div class="title-tips font-YoungSerif my-8 uppercase text-center">
+                <h1 class="text-[1.5rem]">Dicas de cuidado pessoal</h1>
+            </div>
+        </div>
+
+        <div class="px-24 font-Hubballi">
+            <div class="py-2 border-[1px] border-gray-300">
+                <button @click="toggleSection(1)"
+                    class="w-full text-left px-4 py-2 rounded-md focus:outline-none flex justify-between items-center uppercase">
+                    <span class="text-[1.2rem]" >Dicas de Hidratação</span>
+                    <span :class="openSection === 1 ? 'rotate-90' : ''"
+                        class="transform transition-transform duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1" viewBox="0 0 330 330"
+                            xml:space="preserve">
+                            <path id="XMLID_222_"
+                                d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001  c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213  C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606  C255,161.018,253.42,157.202,250.606,154.389z" />
+                        </svg>
+                    </span>
+                </button>
+                <div v-show="openSection === 1" class="overflow-hidden transition-all duration-300">
+                    <p class="p-4 text-gray-700 font-HindVadodara text-lg">
+                        Manter a pele bem hidratada é essencial para garantir um barbear suave e evitar irritações.
+                        Utilize produtos específicos para o seu tipo de pele, ajudando a preservar a saúde e a aparência
+                        do rosto. Além disso, beba água regularmente, pois a hidratação interna também reflete na
+                        qualidade da pele e no conforto do barbear.
+                    </p>
+                </div>
+            </div>
+
+            <div class="py-2 my-2 border-[1px] border-gray-300">
+                <button @click="toggleSection(2)"
+                    class="w-full text-left px-4 py-2 rounded-md focus:outline-none flex justify-between items-center uppercase">
+                    <span class="text-[1.2rem]" >Cuidados com a Pele</span>
+                    <span :class="openSection === 2 ? 'rotate-90' : ''"
+                        class="transform transition-transform duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1" viewBox="0 0 330 330"
+                            xml:space="preserve">
+                            <path id="XMLID_222_"
+                                d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001  c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213  C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606  C255,161.018,253.42,157.202,250.606,154.389z" />
+                        </svg>
+                    </span>
+                </button>
+                <div v-show="openSection === 2" class="overflow-hidden transition-all duration-300">
+                    <p class="p-4 text-gray-700 font-HindVadodara text-lg">
+                        Cuidar da pele é fundamental para manter uma aparência saudável e facilitar o processo de
+                        barbear. Limpe o rosto diariamente com produtos adequados, esfolie para remover células mortas e
+                        use um bom hidratante para evitar o ressecamento. Além disso, aplique protetor solar, mesmo em
+                        dias nublados, para proteger a pele dos danos causados pelos raios UV.
+                    </p>
+                </div>
+            </div>
+
+            <div class="py-2 border-[1px] border-gray-300">
+                <button @click="toggleSection(3)"
+                    class="w-full text-left px-4 py-2 rounded-md focus:outline-none flex justify-between items-center uppercase">
+                    <span class="text-[1.2rem]" >Dicas de Beleza</span>
+                    <span :class="openSection === 3 ? 'rotate-90' : ''"
+                        class="transform transition-transform duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1" viewBox="0 0 330 330"
+                            xml:space="preserve">
+                            <path id="XMLID_222_"
+                                d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001  c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213  C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606  C255,161.018,253.42,157.202,250.606,154.389z" />
+                        </svg>
+                    </span>
+                </button>
+                <div v-show="openSection === 3" class="overflow-hidden transition-all duration-300">
+                    <p class="p-4 text-gray-700 font-HindVadodara text-lg">
+                        Cuidar da pele é fundamental para manter uma aparência saudável e facilitar o processo de
+                        barbear. Limpe o rosto diariamente com produtos adequados, esfolie para remover células mortas e
+                        use um bom hidratante para evitar o ressecamento. Além disso, aplique protetor solar, mesmo em
+                        dias nublados, para proteger a pele dos danos causados pelos raios UV.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
 import FormService from "../components/FormService.vue";
 
 export default {
-  name: "Home",
-  components: {
-    FormService
-  }
+    name: "Home",
+    components: {
+        FormService
+    },
+    data() {
+        return {
+            openSection: 1
+        };
+    },
+    methods: {
+        toggleSection(section) {
+            this.openSection = this.openSection === section ? null : section;
+        }
+    }
 };
 </script>
 
 <style>
 .bck-img__home {
-    background: url('/src/assets/banner-home-cut.png');
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5382528011204482) 28%, rgba(255,255,255,0) 100%), url('/src/assets/banner-home-cut.png') center / cover no-repeat;
 }
 
 .about-content {
     background: url('/src/assets/vinking-background-cover.png');
+}
+
+.btn-home__pay{
+  position: relative;
+}
+
+.btn-home__pay::before, .btn-home__pay::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 10px;
+    background: url('/src/assets/btn-img.png') center no-repeat;
+}
+
+.btn-home__pay::before {
+  top: -15px; 
+}
+
+.btn-home__pay::after {
+  bottom: -15px; 
 }
 </style>
