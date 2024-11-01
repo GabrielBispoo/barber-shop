@@ -1,6 +1,6 @@
 <template>
     <form @submit.prevent="handleSubmit" class="flex flex-wrap overflow-hidden">
-        <div class="w-1/2 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/2 lg:px-1 lg:my-1 xl:w-1/2 xl:px-1 xl:my-1">
+        <div class="w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-full md:px-1 md:my-1 lg:w-full lg:px-1 lg:my-1 xl:w-1/2 xl:px-1 xl:my-1">
             <div class="name-input__box my-4">
                 <input type="text" id="name" v-model="formData.name" class="w-full" placeholder="Digite seu nome"
                     required />
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <div class="w-1/2 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/2 lg:pl-8 lg:my-1 xl:w-1/2 xl:pl-8 xl:my-1">
+        <div class="w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-full md:px-1 md:my-1 lg:w-full lg:px-1 lg:my-1 xl:w-1/2 xl:px-1 xl:my-1">
             <div class="service-select__box select-style my-4">
                 <select class="w-full" id="service" v-model="formData.service" required>
                     <option disabled value="">Selecione um serviço</option>

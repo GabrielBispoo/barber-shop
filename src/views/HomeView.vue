@@ -1,8 +1,8 @@
 <template>
-    <section class="backgound__center bck-img__home w-full h-[130dvh] relative">
+    <section class="backgound__center bck-img__home w-full h-[100dvh] relative">
 
         <div
-            class="content__home banner__content  gap-4 flex flex-col absolute w-1/3 text-center bottom-0 left-2/4 translate-x-[-50%] translate-y-[-50%] text-white">
+            class="content__home banner__content  gap-4 flex flex-col absolute w-9/12 md:w-1/3 text-center bottom-0 left-2/4 translate-x-[-50%] translate-y-[-50%] text-white">
             <div class="title-content__best__barber font-Hubballi uppercase">
                 <h1>A melhor barbearia do Brasil está pertinho de você!</h1>
             </div>
@@ -21,9 +21,9 @@
 
     </section>
 
-    <section class="client__home pt-24 pb-36">
+    <section class="client__home pt-0 md:pt-24 pb-36" ref="section2">
         <div class="content__clients">
-            <div class="title-section w-full px-24 py-12 text-white">
+            <div class="title-section w-full px-4 md:px-24 py-12 text-white">
                 <div class="name__section font-Hubballi uppercase">
                     <span class="text-lg">Quem é cliente do</span>
                 </div>
@@ -34,8 +34,9 @@
             </div>
 
 
-            <div class="content__flexbox grid__images flex items-center">
-                <div class="adult__client">
+            <div class="content__flexbox grid__images flex flex-wrap overflow-hidden items-center px-4 md:px-0">
+                <div
+                    class="adult__client w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-full md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
                     <div class="image__adult__client h-[300px]">
                         <img src="/src/assets/adult-image-client.png" alt="adult__client__barber-shop">
                     </div>
@@ -46,7 +47,8 @@
                     </div>
                 </div>
 
-                <div class="old__client">
+                <div
+                    class="old__client w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-full md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
                     <div class="image__old__client h-[300px]">
                         <img src="/src/assets/old-image-client.png" alt="old__client__barber-shop">
                     </div>
@@ -57,7 +59,8 @@
                     </div>
                 </div>
 
-                <div class="child__client">
+                <div
+                    class="child__client w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-full md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
                     <div class="image__child__client h-[300px]">
                         <img src="/src/assets/child-image-client.png" alt="child__client__barber-shop">
                     </div>
@@ -71,22 +74,90 @@
         </div>
     </section>
 
+    <section class="service__prices pt-24 pb-36">
+        <div class="title-section tema__cop font-YoungSerif uppercase text-center my-8 text-white">
+            <h1 class="text-5xl">Promoções</h1>
+        </div>
+
+        <div class="card-grid-play flex flex-wrap overflow-hidden items-center md:my-0 my-8">
+            <div
+                class="text-white hair-cut card-01-price w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
+                <div class="content__card__prices p-8 m-8 bg-[#E96405] flex flex-col gap-8">
+                    <div class="image__card price-card">
+                        <img src="/src/assets/hair-cut.png" alt="hair-cut__price">
+                    </div>
+
+                    <div class="content__price-card uppercase flex flex-col gap-8">
+                        <div class="title-cp w-[20vw]">
+                            <h1 class="font-YoungSerif text-4xl sm:text-5xl md:text-5xl">CORTE DE CABELO</h1>
+                            <span class="font-Hubballi text-xl sm:text-2xl md:text-3xl">Por Apenas</span>
+                        </div>
+                        <div class="price-box card__price font-YoungSerif flex items-center gap-4 justify-end">
+                            <span class="text-[#873800] text-2xl sm:text-3xl">R$32,99</span>
+                            <h1 class="text-4xl sm:text-5xl">R$24,99</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="text-white hair-cut card-01-price w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
+                <div class="content__card__prices p-8 m-8 bg-[#E96405] flex flex-col gap-8">
+                    <div class="image__card price-card">
+                        <img src="/src/assets/barber-cut.png" alt="hair-cut__price">
+                    </div>
+
+                    <div class="content__price-card uppercase flex flex-col gap-8">
+                        <div class="title-cp w-[20vw]">
+                            <h1 class="font-YoungSerif text-4xl sm:text-5xl md:text-5xl uppercase">BARBA</h1>
+                            <span class="font-Hubballi text-xl sm:text-2xl md:text-3xl">Por Apenas</span>
+                        </div>
+                        <div class="price-box card__price font-YoungSerif flex items-center gap-4 justify-end">
+                            <span class="text-[#873800] text-2xl sm:text-3xl">R$25,99</span>
+                            <h1 class="text-4xl sm:text-5xl">R$14,99</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="text-white massage-cut card-01-price w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
+                <div class="content__card__prices p-8 m-8 bg-[#E96405] flex flex-col gap-8">
+                    <div class="image__card price-card">
+                        <img src="/src/assets/massage-cut.png" alt="massage-cut__price">
+                    </div>
+
+                    <div class="content__price-card uppercase flex flex-col gap-8">
+                        <div class="title-cp w-[20vw]">
+                            <h1 class="font-YoungSerif text-4xl sm:text-5xl md:text-5xl uppercase">MASSAGEM FACIAL</h1>
+                            <span class="font-Hubballi text-xl sm:text-2xl md:text-3xl">Por Apenas</span>
+                        </div>
+                        <div class="price-box card__price font-YoungSerif flex items-center justify-end">
+                            <span class="text-[#873800] text-2xl sm:text-3xl">R$22,99</span>
+                            <h1 class="text-4xl sm:text-5xl">R$13,99</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="service__home pt-24 pb-36">
         <div class="content__services">
-            <div class="title-section w-full px-24 py-12 text-white">
+            <div class="title-section w-full px-4 md:px-24 py-12 text-white">
                 <div class="name__section font-Hubballi uppercase">
                     <span class="text-lg">Nossos Serviços</span>
                 </div>
 
                 <div class="sub__service__section font-YoungSerif uppercase">
-                    <h1 class="text-[1.5rem]">OS MAIS VARIADOS SERVIÇOS PARA VOCÊ DESFRUTAR DA MELHOR EXPERÊNCIA.</h1>
+                    <h1 class="text-4xl">OS MAIS VARIADOS SERVIÇOS PARA VOCÊ DESFRUTAR DA MELHOR EXPERÊNCIA.</h1>
                 </div>
             </div>
 
 
-            <div class="content__flexbox grid__services flex flex-wrap overflow-hidden px-24 gap-8">
+            <div class="content__flexbox grid__services flex flex-wrap overflow-hidden px-4 md:px-24 gap-8">
                 <div
-                    class="service-01__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
+                    class="service-01__content w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
                     <div class="icon__services my-2">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_51_91)">
@@ -114,7 +185,7 @@
                     </div>
                 </div>
                 <div
-                    class="service-02__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
+                    class="service-02__content w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
                     <div class="icon__services my-2">
                         <svg width="50" height="44" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -135,7 +206,7 @@
                     </div>
                 </div>
                 <div
-                    class="service-03__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
+                    class="service-03__content w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
                     <div class="icon__services my-2">
                         <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_52_122)">
@@ -168,7 +239,7 @@
                     </div>
                 </div>
                 <div
-                    class="service-04__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
+                    class="service-04__content w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
                     <div class="icon__services my-2">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -192,7 +263,7 @@
                     </div>
                 </div>
                 <div
-                    class="service-05__content w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/4 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1">
+                    class="service-05__content w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
                     <div class="icon__services my-2">
                         <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_52_153)">
@@ -227,13 +298,13 @@
     </section>
 
     <section class="team__home bg-white pt-36 pb-20">
-        <div class="title-section tema__cop font-YoungSerif uppercase text-center my-8">
-            <h1 class="text-[1.5rem]">Nossos profissionais</h1>
+        <div class="title-section tema__cop font-YoungSerif uppercase text-center my-12">
+            <h1 class="text-4xl">Nossos profissionais</h1>
         </div>
 
-        <div class="cards__team flex flex-wrap overflow-hidden mx-10">
+        <div class="cards__team flex flex-wrap overflow-hidden mx-4 md:mx-10">
             <div
-                class="barber__wil w-1/3 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
+                class="barber__wil w-full px-1 my-8 sm:w-full sm:px-1 sm:my-8 md:w-1/2 md:px-1 md:my-8 lg:w-1/3 lg:px-1 lg:my-8 xl:w-1/3 xl:px-1 xl:my-8">
                 <div class="barber__image">
                     <img src="/src/assets/willian-barber.png" alt="willian-barber">
                 </div>
@@ -244,12 +315,12 @@
                     </div>
 
                     <div class="name-barber font-YoungSerif uppercase">
-                        <h1 class="text-[1.5rem]">willian</h1>
+                        <h1 class="text-4xl">willian</h1>
                     </div>
                 </div>
             </div>
             <div
-                class="barber__doug w-1/3 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
+                class="barber__doug w-full px-1 my-8 sm:w-full sm:px-1 sm:my-8 md:w-1/2 md:px-1 md:my-8 lg:w-1/3 lg:px-1 lg:my-8 xl:w-1/3 xl:px-1 xl:my-8">
                 <div class="barber__image">
                     <img src="/src/assets/douglas-barber.png" alt="douglas-barber">
                 </div>
@@ -260,12 +331,12 @@
                     </div>
 
                     <div class="name-barber font-YoungSerif uppercase">
-                        <h1 class="text-[1.5rem]">douglas</h1>
+                        <h1 class="text-4xl">douglas</h1>
                     </div>
                 </div>
             </div>
             <div
-                class="barber__edu w-1/3 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/3 xl:px-1 xl:my-1">
+                class="barber__edu w-full px-1 my-8 sm:w-full sm:px-1 sm:my-8 md:w-1/2 md:px-1 md:my-8 lg:w-1/3 lg:px-1 lg:my-8 xl:w-1/3 xl:px-1 xl:my-8">
                 <div class="barber__image">
                     <img src="/src/assets/eduardo-barber.png" alt="eduardo-barber">
                 </div>
@@ -276,7 +347,7 @@
                     </div>
 
                     <div class="name-barber font-YoungSerif uppercase">
-                        <h1 class="text-[1.5rem]">eduardo</h1>
+                        <h1 class="text-4xl">eduardo</h1>
                     </div>
                 </div>
             </div>
@@ -288,19 +359,19 @@
     </section>
 
     <section class="barber-shop__home bg-white w-full pt-20 pb-24">
-        <div class="flex items-center px-10 about-content h-dvh">
-            <div class="images__left__barber w-3/12">
-                <div class="child__image-barber z-20 relative w-5/6">
+        <div class="flex flex-wrap items-center md:gap-0 gap-8 px-10 about-content h-auto overflow-hidden">
+            <div class="images__left__barber w-full md:w-3/12">
+                <div class="child__image-barber z-20 relative w-5/6 mx-auto">
                     <img src="/src/assets/child-about-barber.png" alt="child-haircut">
                 </div>
-                <div class="hair__image__barber relative z-10 ml-auto w-3/5">
-                    <img class="absolute right-0 -top-8" src="/src/assets/hair-about-barber.png" alt="men-haircut">
+                <div class="hair__image__barber relative z-10 w-3/5  ml-auto">
+                    <img src="/src/assets/hair-about-barber.png" alt="men-haircut">
                 </div>
             </div>
 
-            <div class="content__about-us w-1/2 px-10">
-                <div class="title-about font-YoungSerif w-80 my-8 uppercase">
-                    <h1 class="text-[2rem]">Nossa marca, Nossa História</h1>
+            <div class="content__about-us w-full md:w-1/2 px-4 md:px-10">
+                <div class="title-about font-YoungSerif w-full my-8 uppercase">
+                    <h1 class="text-4xl text-center md:text-left">Nossa marca, Nossa História</h1>
                 </div>
 
                 <div class="content__text__about-us font-HindVadodara text-justify">
@@ -308,45 +379,114 @@
                         melhor em cuidados masculinos. Fundada em Arapiraca, nossa barbearia nasceu do desejo de criar
                         um
                         espaço que une elegância e sofisticação com um toque moderno, oferecendo serviços que vão além
-                        do
-                        corte de cabelo e barba. Nossa equipe é composta por profissionais experientes que trazem na
-                        bagagem
-                        a paixão pela arte da barbearia, sempre em busca de aperfeiçoamento para garantir um atendimento
-                        de
-                        excelência. Desde a inauguração, a Viking Barbearia se consolidou como referência em estilo e
+                        do corte de cabelo e barba. Nossa equipe é composta por profissionais experientes que trazem na
+                        bagagem a paixão pela arte da barbearia, sempre em busca de aperfeiçoamento para garantir um
+                        atendimento
+                        de excelência. Desde a inauguração, a Viking Barbearia se consolidou como referência em estilo e
                         bem-estar, com um ambiente pensado para oferecer uma experiência única, onde cada detalhe
-                        reflete
-                        nossa dedicação em proporcionar conforto e exclusividade. Venha nos visitar e faça parte dessa
+                        reflete nossa dedicação em proporcionar conforto e exclusividade. Venha nos visitar e faça parte
+                        dessa
                         história de sucesso.</p>
                 </div>
             </div>
 
-            <div class="images__right__barber w-3/12">
+            <div class="images__right__barber w-full md:w-3/12">
                 <div class="men__image-barber w-full">
                     <img src="/src/assets/men-about-barber.png" alt="men-barber">
                 </div>
             </div>
         </div>
 
+
         <div class="slider__testimonials-barber-shop pt-20">
             <div class="title-testimonial font-YoungSerif my-8 uppercase text-center">
-                <h1 class="text-[1.5rem]">Feedbacks de clientes</h1>
+                <h1 class="text-4xl">Feedbacks de clientes</h1>
+            </div>
+
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <ul role="list"
+                    class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+                    <li>
+                        <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8 font-Hubballi uppercase">
+                            <li>
+                                <figure class="relative bg-white p-6 border-2 border-gray-200">
+                                    <blockquote class="relative">
+                                        <p class="text-lg tracking-tight text-slate-900">Experiência incrivel, qualidade nos serviços e no atendimento.</p>
+                                    </blockquote>
+                                    <figcaption
+                                        class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                                        <div>
+                                            <div class="font-display text-base text-slate-900">Jorge Martins</div>
+                                        </div>
+                                        <div class="overflow-hidden rounded-full bg-slate-50">
+                                            <img alt="" class="h-14 w-14 object-cover" style="color:transparent"
+                                                src="https://randomuser.me/api/portraits/men/15.jpg">
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8 font-Hubballi uppercase">
+                            <li>
+                                <figure class="relative bg-white p-6 border-2 border-gray-200">
+                                    <blockquote class="relative">
+                                        <p class="text-lg tracking-tight text-slate-900">O corte ficou perfeito e superou minhas expectativas. Recomendo a todos que procuram um atendimento de qualidade e resultados incríveis!</p>
+                                    </blockquote>
+                                    <figcaption
+                                        class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                                        <div>
+                                            <div class="font-display text-base text-slate-900">Carlos Henrique</div>
+                                        </div>
+                                        <div class="overflow-hidden rounded-full bg-slate-50">
+                                            <img alt="" class="h-14 w-14 object-cover" style="color:transparent"
+                                                src="https://randomuser.me/api/portraits/men/10.jpg">
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8 font-Hubballi uppercase">
+                            <li>
+                                <figure class="relative bg-white p-6 border-2 border-gray-200">
+                                    <blockquote class="relative">
+                                        <p class="text-lg tracking-tight text-slate-900">Profissionais atenciosos e corte perfeito, recomendo a todos!</p>
+                                    </blockquote>
+                                    <figcaption
+                                        class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                                        <div>
+                                            <div class="font-display text-base text-slate-900">Lucas Alves</div>
+                                        </div>
+                                        <div class="overflow-hidden rounded-full bg-slate-50">
+                                            <img alt="" class="h-14 w-14 object-cover" style="color:transparent"
+                                                src="https://randomuser.me/api/portraits/men/18.jpg">
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
             </div>
         </div>
     </section>
 
     <section class="form__service__home bg-white pt-20 pb-24">
-        <div class="title-section w-full px-24 py-12 text-black">
+        <div class="title-section w-full px-4 md:px-24 py-12 text-black">
             <div class="name__section font-Hubballi uppercase">
                 <span class="text-[1.2rem]">Reserve já!</span>
             </div>
 
             <div class="sub__service__section font-YoungSerif uppercase ">
-                <h1 class="text-[1.5rem]">reserve seu atendimento abaixo.</h1>
+                <h1 class="text-4xl">reserve seu atendimento abaixo.</h1>
             </div>
         </div>
 
-        <div class="form__section__service px-24">
+        <div class="form__section__service px-4 md:px-24">
             <FormService />
         </div>
 
@@ -358,13 +498,103 @@
     <section class="store__barber__home bg-white">
         <div class="store__barber-shop pt-20">
             <div class="title-shop font-YoungSerif my-8 uppercase text-center">
-                <h1 class="text-[1.5rem]">NOSSOS PRODUTOS</h1>
+                <h1 class="text-4xl">NOSSOS PRODUTOS</h1>
             </div>
         </div>
 
-        <div class="product-shop flex flex-wrap overflow-hidden px-10">
+        <div class="product-shop flex flex-wrap overflow-hidden justify-center gap-8 px-10">
             <div
-                class="card__shop w-1/4 px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1 border-[1px] border-grey-800 cursor-pointer hover:opacity-80 transition duration-500">
+                class="card__shop w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1 border-[1px] border-grey-800 cursor-pointer hover:opacity-80 transition duration-500">
+                <div class="info___card px-2 py-4">
+                    <div class="image__product bg-gray-500 h-[460px]">
+
+                    </div>
+
+                    <div class="content__card-product mt-4 flex flex-col gap-4 font-Hubballi uppercase">
+                        <div class="info__shop">
+                            <h1>Kit Fator de Crescimento para Barba e Peeling Don Alcides</h1>
+                        </div>
+
+                        <div class="price__card text-[1.5rem] font-bold">
+                            <span>R$ 125,99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="card__shop w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1 border-[1px] border-grey-800 cursor-pointer hover:opacity-80 transition duration-500">
+                <div class="info___card px-2 py-4">
+                    <div class="image__product bg-gray-500 h-[460px]">
+
+                    </div>
+
+                    <div class="content__card-product mt-4 flex flex-col gap-4 font-Hubballi uppercase">
+                        <div class="info__shop">
+                            <h1>Kit Fator de Crescimento para Barba e Peeling Don Alcides</h1>
+                        </div>
+
+                        <div class="price__card text-[1.5rem] font-bold">
+                            <span>R$ 125,99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="card__shop w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1 border-[1px] border-grey-800 cursor-pointer hover:opacity-80 transition duration-500">
+                <div class="info___card px-2 py-4">
+                    <div class="image__product bg-gray-500 h-[460px]">
+
+                    </div>
+
+                    <div class="content__card-product mt-4 flex flex-col gap-4 font-Hubballi uppercase">
+                        <div class="info__shop">
+                            <h1>Kit Fator de Crescimento para Barba e Peeling Don Alcides</h1>
+                        </div>
+
+                        <div class="price__card text-[1.5rem] font-bold">
+                            <span>R$ 125,99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="card__shop w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1 border-[1px] border-grey-800 cursor-pointer hover:opacity-80 transition duration-500">
+                <div class="info___card px-2 py-4">
+                    <div class="image__product bg-gray-500 h-[460px]">
+
+                    </div>
+
+                    <div class="content__card-product mt-4 flex flex-col gap-4 font-Hubballi uppercase">
+                        <div class="info__shop">
+                            <h1>Kit Fator de Crescimento para Barba e Peeling Don Alcides</h1>
+                        </div>
+
+                        <div class="price__card text-[1.5rem] font-bold">
+                            <span>R$ 125,99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="card__shop w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1 border-[1px] border-grey-800 cursor-pointer hover:opacity-80 transition duration-500">
+                <div class="info___card px-2 py-4">
+                    <div class="image__product bg-gray-500 h-[460px]">
+
+                    </div>
+
+                    <div class="content__card-product mt-4 flex flex-col gap-4 font-Hubballi uppercase">
+                        <div class="info__shop">
+                            <h1>Kit Fator de Crescimento para Barba e Peeling Don Alcides</h1>
+                        </div>
+
+                        <div class="price__card text-[1.5rem] font-bold">
+                            <span>R$ 125,99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="card__shop w-full px-1 my-1 sm:w-full sm:px-1 sm:my-1 md:w-1/2 md:px-1 md:my-1 lg:w-1/3 lg:px-1 lg:my-1 xl:w-1/4 xl:px-1 xl:my-1 border-[1px] border-grey-800 cursor-pointer hover:opacity-80 transition duration-500">
                 <div class="info___card px-2 py-4">
                     <div class="image__product bg-gray-500 h-[460px]">
 
@@ -387,15 +617,15 @@
     <section class="bg-white pt-20 pb-24">
         <div class="tips__barber my-20">
             <div class="title-tips font-YoungSerif my-8 uppercase text-center">
-                <h1 class="text-[1.5rem]">Dicas de cuidado pessoal</h1>
+                <h1 class="text-4xl">Dicas de cuidado pessoal</h1>
             </div>
         </div>
 
-        <div class="px-24 font-Hubballi">
+        <div class="px-4 md:px-24 font-Hubballi">
             <div class="py-2 border-[1px] border-gray-300">
                 <button @click="toggleSection(1)"
                     class="w-full text-left px-4 py-2 rounded-md focus:outline-none flex justify-between items-center uppercase">
-                    <span class="text-[1.2rem]" >Dicas de Hidratação</span>
+                    <span class="text-[1.2rem]">Dicas de Hidratação</span>
                     <span :class="openSection === 1 ? 'rotate-90' : ''"
                         class="transform transition-transform duration-200">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -419,7 +649,7 @@
             <div class="py-2 my-2 border-[1px] border-gray-300">
                 <button @click="toggleSection(2)"
                     class="w-full text-left px-4 py-2 rounded-md focus:outline-none flex justify-between items-center uppercase">
-                    <span class="text-[1.2rem]" >Cuidados com a Pele</span>
+                    <span class="text-[1.2rem]">Cuidados com a Pele</span>
                     <span :class="openSection === 2 ? 'rotate-90' : ''"
                         class="transform transition-transform duration-200">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -443,7 +673,7 @@
             <div class="py-2 border-[1px] border-gray-300">
                 <button @click="toggleSection(3)"
                     class="w-full text-left px-4 py-2 rounded-md focus:outline-none flex justify-between items-center uppercase">
-                    <span class="text-[1.2rem]" >Dicas de Beleza</span>
+                    <span class="text-[1.2rem]">Dicas de Beleza</span>
                     <span :class="openSection === 3 ? 'rotate-90' : ''"
                         class="transform transition-transform duration-200">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -477,31 +707,37 @@ export default {
     },
     data() {
         return {
-            openSection: 1
+            openSection: 1,
         };
     },
     methods: {
         toggleSection(section) {
             this.openSection = this.openSection === section ? null : section;
-        }
+        },
     }
 };
 </script>
 
+
 <style>
+.service__prices {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5382528011204482) 28%, rgba(255, 255, 255, 0) 100%), url('/src/assets/back-barber.png') center / cover no-repeat;
+}
+
 .bck-img__home {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5382528011204482) 28%, rgba(255,255,255,0) 100%), url('/src/assets/banner-home-cut.png') center / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5382528011204482) 28%, rgba(255, 255, 255, 0) 100%), url('/src/assets/banner-home-cut.png') center / cover no-repeat;
 }
 
 .about-content {
-    background: url('/src/assets/vinking-background-cover.png');
+    background: url('/src/assets/vinking-background-cover.png') center / 70% no-repeat;
 }
 
-.btn-home__pay{
-  position: relative;
+.btn-home__pay {
+    position: relative;
 }
 
-.btn-home__pay::before, .btn-home__pay::after {
+.btn-home__pay::before,
+.btn-home__pay::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -512,10 +748,24 @@ export default {
 }
 
 .btn-home__pay::before {
-  top: -15px; 
+    top: -15px;
 }
 
 .btn-home__pay::after {
-  bottom: -15px; 
+    bottom: -15px;
+}
+
+.wrapper {
+    display: flex;
+    width: 800%;
+    /* Force a largura para testar se o comportamento de rolagem aparece */
+}
+
+.bloc {
+    display: inline-block;
+    width: 100%;
+    height: 700px;
+    background: black;
+    margin: 25px;
 }
 </style>

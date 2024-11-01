@@ -17,15 +17,15 @@ import FooterBar from './components/FooterBar.vue';
   margin: 0;
 }
 
-.font-YoungSerif{
+.font-YoungSerif {
   font-family: 'YoungSerif';
 }
 
-.font-Hubballi{
+.font-Hubballi {
   font-family: 'Hubballi';
 }
 
-.font-HindVadodara{
+.font-HindVadodara {
   font-family: 'HindVadodara';
 }
 
@@ -38,5 +38,9 @@ video {
 
 body {
   background-color: #000;
+}
+
+.nav__links{
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%);
 }
 </style>
